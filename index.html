@@ -59,7 +59,6 @@
     width: 100%;
     position: fixed;
   }
-  
   .splash {
     width: 100%;
     height: 100px;
@@ -120,24 +119,30 @@
     width: 50px;
     margin: -15px 10px 0px 10px
   }
-  .logos{
+  .logos {
     padding: 0px 0px 0px 150px
   }
-  
-  img[type="products"]{
+  img[type="products"] {
+    margin: 0 auto;
     margin: 90px 0px 0px 10px;
     display: inline-block;
     width: 270px;
     padding: 0px 30px;
   }
-
   p[type="producttext"] {
+    font-size: 18px;
     padding: 20px 0px 0px 40px;
     margin: 0px 100px 0px 0px;
     text-align: justify;
     width: 90%;
     display: inline-block;
     color: white;
+  }
+  span {
+    font-size: 23px;
+    font-style: italic;
+    color: rgb(96, 129, 247)
+    
   }
 </style>
 </head>
@@ -154,7 +159,7 @@
       </ul>
     </div>
   </header>
-  <button class="kids">See the Kid's Website</button>
+  <button class="kids" onclikc>See the Kid's Website</button>
   <div class="splash">
   </div>
   <div class="main">
@@ -163,13 +168,27 @@
       <p type="paragraphtext">We are a startup company hoping to offer a solution to your busy morning. Working hard nights to manufacture the solutions to fix life’s little problems, these products have helped to better our own as well. Situated in Canada, we hope to spread our swish swash product worldwide and expand our demographic to those who can be helped by a quicker morning. With support from consumers.</p>
     </div>
     <div class="pricing">
-      <a name="pricing"><h2>Pricing</h2></a>
+      <a name="pricing"><h2>Our Product</h2></a>
     </div>
       <img type="products" src="https://www.w3schools.com/w3images/fjords.jpg">
       <img type="products" src="https://www.w3schools.com/w3images/fjords.jpg">
       <img type="products" src="https://www.w3schools.com/w3images/fjords.jpg">
     <div class="productlist">
-      <p type="producttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <p type="producttext">
+<span>Application</span><br><br>
+Swish Swash is a small ball used to freshen up your teeth and grace you with a blinding smile :). You simply place it in your mouth and let it do its job!
+Firstly, it would scan the inside of your mouth to detect problematic and spotted areas and in a blink of an eye, the ball would burst into tiny safe particles tackling all the bacterias
+<br><br><span>Usage</span><br><br>
+This product is perfect for camps, sleepovers, people who are consistently busy, lazy people, 
+It is engineered to make your morning easier, Swish Swash is great for anyone who doesn't have the time to stop and brush
+Swish Swash for kids:
+The ingredients used are non toxic and diluted making it less powerful in their delicate small mouths. This ensures a safe usable product for children.
+<br><br><span>Swish Swash for kids</span><br><br>
+The ingredients used are non toxic and diluted making it less powerful in their delicate small mouths. This ensures a safe usable product for children.
+<br><br><span>Ingredients</span><br><br>
+Our secret combination of safe and clinically tested substances such as LSD and cocaine give the swish swash its signature deep cleaning. We can ensure the safety of our product as it has been certified by federal agencies such as the FDA, Health Canada, and the NSA. Our animals are fed non-gluten, gmo-free, organic, vegan diets that are free of toxins such as dihydrogen monoxide. You can be rest assured that you, your friends, and your family will enjoy cleaner teeth while aiding the environment and protecting your health.
+
+</p>
       
     </div>
     <div class="contact">
@@ -192,6 +211,7 @@
   });
   var currentcolour = grey;
   var changeBackground = function() {
+    alert('hello');
     if (currentcolour == grey) {
       $('body').toggleClass('toggle');
       currentcolour = blue;
