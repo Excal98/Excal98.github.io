@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/assets/jquery.js"></script>
 <style>
   body {
     background-color: rgb(40, 41, 45);
@@ -43,7 +43,7 @@
     display: inline;
     padding: 0px 40px 5px 0px;
   }
-  p {
+  p[type="paragraphtext"] {
     color: white;
     font-size: 16;
     position: relative;
@@ -84,7 +84,7 @@
     padding: 5px 0px 5px 0px;
     background-size: cover;
   }
-  .product {
+  .pricing {
     margin: 20px 12px 50px 12px; 
     text-align: center;
     border-radius: 15px;
@@ -93,14 +93,13 @@
     background: -webkit-linear-gradient(rgba(9, 67, 165, 0.8), rgba(9, 67, 165, 0.3));
     background: -moz-linear-gradient(rgba(9, 67, 165, 0.8), rgba(9, 67, 165, 0.3));    
     top: 100px;
-    bottom: 100px;
     padding: 5px 0px 5px 0px;
     background-size: cover;
   }
   .contact {
     margin: 20px 12px 50px 12px; 
     text-align: left;
-    top: 120px;
+    top: 40px;
     position: relative;
     background-size: cover;
   }
@@ -116,14 +115,29 @@
   .bar {
     margin: 0px 0px 0px 20px;
   }
-  img {
+  img[type="logos"] {
     display: inline-block;
     width: 50px;
     margin: -15px 10px 0px 10px
   }
-  
-  .images{
+  .logos{
     padding: 0px 0px 0px 150px
+  }
+  
+  img[type="products"]{
+    margin: 90px 0px 0px 10px;
+    display: inline-block;
+    width: 270px;
+    padding: 0px 30px;
+  }
+
+  p[type="producttext"] {
+    padding: 20px 30px 0px 40px;
+    margin: 0px 0px 0px 0px;
+    text-align: justify;
+    width: 270px;
+    display: inline-block;
+    color: white;
   }
 </style>
 </head>
@@ -146,20 +160,27 @@
   <div class="main">
     <div class="about">
       <a name="about"><h2>About Us</h2></a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p type="paragraphtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div class="product">
-      <a name="product"><h2>Pricing</h2></a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="pricing">
+      <a name="pricing"><h2>Pricing</h2></a>
+    </div>
+      <img type="products" src="https://www.w3schools.com/w3images/fjords.jpg">
+      <img type="products" src="https://www.w3schools.com/w3images/fjords.jpg">
+      <img type="products" src="https://www.w3schools.com/w3images/fjords.jpg">
+    <div class="productlist">
+      <p type="producttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      <p type="producttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p type="producttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="contact">
       <a name="contact"><h2 class="bar">Contact</h2></a>
       <div class="rectangle">
-        <div class="images">
-          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png">
-          <img src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png">
-          <img src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png">
-          <img src="https://cdn.worldvectorlogo.com/logos/tumblr-icon.svg">
+        <div class="logos">
+          <img type="logos" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Twitter_bird_logo_2012.svg/1259px-Twitter_bird_logo_2012.svg.png">
+          <img type="logos" src="https://facebookbrand.com/wp-content/themes/fb-branding/prj-fb-branding/assets/images/fb-art.png">
+          <img type="logos" src="https://instagram-brand.com/wp-content/themes/ig-branding/assets/images/ig-logo-email.png">
+          <img type="logos" src="https://cdn.worldvectorlogo.com/logos/tumblr-icon.svg">
         </div>
       </div>
     </div>
